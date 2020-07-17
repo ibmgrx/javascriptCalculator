@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<!--  Kalkulator Sederhana Menggunakan Javascript 
+==================== IBMGRX ================= -->
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Kalkulator</title>
+  <script type="text/javascript" src="script.js"></script>
+  <link rel="stylesheet" type="text/css" href="stylesheet.css">
+</head>
+<body>
+	<div class="kalkulator">
+		<form name="form">
+			<input class="tampilan" name="tampilan">
+		</form>
+		<table>
+			<tr>
+				<td><input class="tombol" type="button" value="C" onclick="reset()"></td>
+				<td><input class="tombol" type="button" value="/" onclick="masukan('/')"></td>
+				<td><input class="tombol" type="button" value="x" onclick="masukan('*')"></td>
+				<td><input class="tombol" type="button" value="<" onclick="hapus()"></td>			
+			</tr>
+			<tr>
+				<td><input class="tombol" type="button" value="7" onclick="masukan(7)"></td>
+				<td><input class="tombol" type="button" value="8" onclick="masukan(8)"></td>
+				<td><input class="tombol" type="button" value="9" onclick="masukan(9)"></td>
+				<td><input class="tombol" type="button" value="-" onclick="masukan('-')"></td>			
+			</tr>
+			<tr>
+				<td><input class="tombol" type="button" value="4" onclick="masukan(4)"></td>
+				<td><input class="tombol" type="button" value="5" onclick="masukan(5)"></td>
+				<td><input class="tombol" type="button" value="6" onclick="masukan(6)"></td>
+				<td><input class="tombol" type="button" value="+" onclick="masukan('+')"></td>			
+			</tr>
+			<tr>
+				<td><input class="tombol" type="button" value="1" onclick="masukan(1)"></td>
+				<td><input class="tombol" type="button" value="2" onclick="masukan(2)"></td>
+				<td><input class="tombol" type="button" value="3" onclick="masukan(3)"></td>
+				<td><input class="tombol" type="button" value="." onclick="masukan('.')"></td>			
+			</tr>
+			<tr>
+				<td colspan="3"><input class="tombol" style="width:166px" type="button" value="0" onclick="masukan(0)"></td>
+				<td><input class="tombol" type="button" value="=" onclick="hasil()"></td>		
+			</tr>
+		</table>
+	</div>
+</body>
+</html>
